@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Binuri Ranaweera | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Google Fonts for a better typography look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                <a href="#">My portfolio</a> 
+            </div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -17,40 +22,55 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h1>Hello, I'm Binuri Ranaweera</h1>
-        <p>Computer science student|QA Enthusiast</p>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h1>Hello, I'm Binuri Ranaweera</h1>
+                <p>Computer Science Student | QA Enthusiast</p>
+                <p class="bio">I am passionate about software development, quality assurance, and AI-driven solutions to enhance system performance.</p>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Multilingual Citizen Report System with Real-Time Reporting and AI-Powered Support</h3>
-            <pA comprehensive web-based system designed to facilitate multilingual citizen report submissions
-              and enhance communication between residents and the local government of Dodangoda Pradeshiya Sabha.
-              The system integrates real-time reporting, AI-powered support, and seamless language translation to improve accessibility and responsiveness..</p>
-            <a href="https://github.com/Binu423/Citizen">View Project</a>
-        </div>
-       
-    </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project">
+                    <h3>Multilingual Citizen Report System</h3>
+                    <p>A comprehensive web-based system designed to facilitate multilingual citizen report submissions and enhance communication between residents and the local government of Dodangoda Pradeshiya Sabha. The system integrates real-time reporting, AI-powered support, and seamless language translation to improve accessibility and responsiveness.</p>
+                    <a href="https://github.com/Binu423/Citizen" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-    <p>&copy; 2026 All rights reserved.</p>
-</footer>
+        <div class="container">
+            <p>&copy; 2026 Binuri Ranaweera | All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Binu423" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
